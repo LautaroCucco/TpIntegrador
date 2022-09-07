@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <title>Home</title>
 </head>
 <body>
 <header>
-    <img src="./img/logo.png" alt="Logo" width="60" height="60">
-    <form action=""><input type="text" placeholder="Haz tu busqueda"></form>
+        <a href="index.html">
+            <img class="logo" src="./img/logo.png" alt="Logo">
+        </a>
+   
+    <form action="./search-results.html">
+        <div>
+            <input type="text" placeholder="Busqueda"> <button class="boton" type="submit">Ir</button>
+        </div>
+    </form>
     <p>
-        <a href=""> HOME </a> | 
-        <a href=""> GENEROS </a> | 
-        <a href=""> PELICULAS </a> | 
+        <a href="index.html"> HOME </a> 
+        <a href=""> GENEROS </a> 
+        <a href=""> FAVORITOS </a> 
+        <a href=""> PELICULAS </a> 
         <a href=""> SERIES </a> 
+        
     </p>
     
 </header>
-    <section>
         <h1>Peliculas populares</h1>
+    <section>
+        
         <article>
             <h3>El robo del siglo (2020)</h3>
             <img src="./img/robods.jpg" alt="Robo del Siglo" width="170" height="250">
@@ -41,8 +52,8 @@
             <img src="./img/secretojos.jpg" alt="El Secreto de sus Ojos" width="170" height="250">
         </article>
     </section>
-    <section>
         <h1>Lo mas visto en peliculas</h1>
+    <section>
         <article>
             <h3>Star Wars: Episodio VI (1983)</h3>
             <img src="./img/starwarslv.jpg" alt="Star Wars: Episodio VI" width="170" height="250">
@@ -64,8 +75,8 @@
             <img src="./img/joker.jpg" alt="Joker" width="170" height="250">
         </article>
     </section>
-    <section>
         <h1>Peliculas mas valoradas</h1>
+    <section>
         <article>
             <h3>Star Wars: Episodio I (1999)</h3>
             <img src="./img/starwarsl.jpg" alt="Star Wars: Episodio I" width="170" height="250">
@@ -87,6 +98,8 @@
             <img src="./img/titanic.jpg" alt="Titanic" width="170" height="250">
         </article>
     </section>
-<footer>Lautaro Cucco & Nicole Sacerdote®</footer>
+<footer>
+    Lautaro Cucco & Nicole Sacerdote® 
+</footer>
 </body>
 </html>
