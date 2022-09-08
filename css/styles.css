@@ -15,7 +15,7 @@ header{
    
 }   
 
-.boton{
+/* .boton{
     background-color: #7700ff;
     border: #7700ff;
 }
@@ -25,7 +25,7 @@ input{
     border: solid;
     border-color: #d44ff5;
     
-}
+} */
 
 
 h1{
@@ -47,6 +47,10 @@ section{
     align-items: center;
     justify-content: center;
     display:inline-flex;
+}
+
+.img{
+    width: 10vw; 
 }
 
 article{
