@@ -93,3 +93,10 @@ p a:hover{
 a{
     text-decoration: none;
 }
+
+footer{
+    background-color: rgba(100, 100, 100, 0.521); 
+    border-bottom: solid;  
+    border-top: solid;
+    border-color: rgba(100, 100, 100, 0.521); 
+}
