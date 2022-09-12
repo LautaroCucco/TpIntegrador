@@ -26,6 +26,31 @@ header{
    
 }   
 
+h1{
+    background-color: #7700ff;
+    border-style:solid;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content:center;
+    display:flex;
+    color: white;
+    
+  
+}
+
+section{
+    
+    align-items: center;
+    justify-content: center;
+    display:inline-flex;
+}
+
+.img{
+    width: 10vw; 
+}
+
 article{
     margin: 40px;
     flex-direction: center;
@@ -36,15 +61,6 @@ article{
 
 }
 
-section{
-    
-    align-items: center;
-    justify-content: center;
-    display:inline-flex;
-}
-
-
-
 h3{
     color: white;
 }
@@ -52,9 +68,6 @@ h3:hover{
     color:#7700ff;
 }
 
-.img{
-    width: 10vw; 
-}
 
 .logo{
     width: 60px;
