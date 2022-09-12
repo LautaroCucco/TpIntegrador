@@ -1,7 +1,7 @@
 body{
-    font-family: serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin:0%;
-    background-color: #7700ff;
+    background-color: white;
     
     
 }
@@ -9,31 +9,32 @@ body{
 header{
     display:flex;
     align-items: center;
-    background-image: linear-gradient(90deg, #7700ff 70%, #ec8c69 90%);
-    min-height: 70px;
-    justify-content: space-around;
-   
+    background-color: rgba(100, 100, 100, 0.521);   
+    min-height: 50px;
+    justify-content: space-around; 
+    border-bottom: solid;  
+    border-top: solid;
+    border-color: rgba(100, 100, 100, 0.521); 
 }   
 
-/* .boton{
-    background-color: #7700ff;
-    border: #7700ff;
+.boton{
+    background-color: white;
+    border: white;
 }
 input{
-    background-color: #7700ff;
     border-radius: 50px;
     border: solid;
-    border-color: #d44ff5;
+    border-color: white;
     
-} */
+}
 
 
 h1{
-    background-color: #7700ff;
+    background-color: rgba(100, 100, 100, 0.521);
     border-style:solid;
     border-left: none;
     border-right: none;
-    border-color: rgb(255, 255, 255);
+    border-color:  rgba(100, 100, 100, 0.521);
     align-items: center;
     justify-content:center;
     display:flex;
@@ -54,11 +55,11 @@ section{
 }
 
 article{
-    margin: 50px;
+    margin: 40px;
     flex-direction: center;
     align-items: center;
-    padding: 30px;
-    background-color: black;
+    padding: 25px;
+    background-color:  rgba(100, 100, 100, 0.521);
     border-radius: 5px;
 
 }
@@ -71,20 +72,24 @@ h3:hover{
 }
 
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: left 10px;
 }
 
 p a{
     text-decoration: none;
-    color: black;
+    color:  white;
     padding-right: 10px;
     
 }
 
 p a:hover{
-    color:white;
+    color:black;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media (max-widht:420px){
