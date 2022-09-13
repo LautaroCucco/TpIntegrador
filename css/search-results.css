@@ -51,6 +51,10 @@ section{
     display:inline-flex;
 }
 
+ul{
+ color:white;
+}
+
 .img{
     width: 10vw; 
 }
@@ -67,7 +71,7 @@ article{
 }
 
 h3{
-    text-align: center;
+    text-align: left;
     color: white;
 }
 h3:hover{
@@ -101,8 +105,3 @@ footer{
     border-top: solid;
     border-color: rgba(100, 100, 100, 0.521); 
 }
-
-/* @media screen and (max-width: 1366px) {
-    header{
-        background-position: 50%;
-    } */
