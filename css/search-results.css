@@ -44,6 +44,8 @@ h1{
 }
 
 section{
+    background-color: rgba(100, 100, 100, 0.521); 
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
@@ -51,10 +53,11 @@ section{
     display:inline-flex;
 }
 
-ul{
- color:white;
+.div{
+    /* background-color: rgba(100, 100, 100, 0.521); */
+    text-align: center;
+    display: flex;
 }
-
 .img{
     width: 10vw; 
 }
@@ -65,7 +68,7 @@ article{
     flex-direction: center;
     align-items: center;
     padding: 25px;
-    background-color:  rgba(100, 100, 100, 0.521);
+    /* background-color:  rgba(100, 100, 100, 0.521); */
     border-radius: 5px;
 
 }
@@ -84,6 +87,10 @@ h3:hover{
     margin: left 10px;
 }
 
+p{
+    color: white;
+    text-align: left;
+}
 p a{
     text-decoration: none;
     color:  white;
