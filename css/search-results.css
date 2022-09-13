@@ -30,22 +30,19 @@ input{
 
 
 h1{
-    background-color: rgba(100, 100, 100, 0.521);
-    border-style:solid;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border-style:solid;
     border-left: none;
     border-right: none;
-    border-color:  rgba(100, 100, 100, 0.521);
-    align-items: center;
-    justify-content:center;
-    display:flex;
-    color: white;
-    
+    border-color:  rgba(100, 100, 100, 0.521); */
   
 }
 
 section{
     background-color: rgba(100, 100, 100, 0.521); 
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
