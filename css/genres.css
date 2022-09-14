@@ -43,6 +43,10 @@ h1{
   
 }
 
+h1:hover{
+    color:black;
+}
+
 section{
     margin-left: 5%;
     margin-right: 5%;
@@ -105,16 +109,7 @@ footer{
     border-color: rgba(100, 100, 100, 0.521); 
 }
 
-@media screen and (max-width: 720px) {
-    p a{
-        padding-left: 10px;
-    }
-    input{
-        padding-right: 10px; 
-    }
-    .boton{
-        display: flex;
-        align-items: center;
-        padding-right: 10px; 
-    }
-}
+/* @media screen and (max-width: 1366px) {
+    header{
+        background-position: 50%;
+    } */
