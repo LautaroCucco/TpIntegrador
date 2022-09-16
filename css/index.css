@@ -106,16 +106,22 @@ footer{
 }
 
 @media screen and (max-width: 1360px) {
-    p a{
+    p a
+    {
         padding-left: 10px;
     }
+
+    form{
+        display: flex; 
+     }
+
     input{
         padding-right: 10px; 
     }
     .boton{
-        display: flex;
         align-items: center;
-        padding-right: 10px; 
+        margin-right: 10px; 
+        margin-left: 10px;
     }
 
     section{
@@ -139,4 +145,30 @@ footer{
         border-radius: 5px;
     
     }
+}
+
+@media screen and (max-width: 940px){
+p a{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+form{
+   display: flex; 
+}
+
+input{
+    flex-wrap: nowrap;
+}
+.boton{
+    align-items: center;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+.logo{
+    padding-right: 10px;
+}
+
 }
