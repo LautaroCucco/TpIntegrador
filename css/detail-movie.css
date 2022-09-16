@@ -127,3 +127,44 @@ a{
     
     }
 }
+.DetailPeli {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+.favbot{
+    color: rgb(12, 12, 12);
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+    
+}
+.sinopsis {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.ContenedorPeli {
+    
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color:  rgba(100, 100, 100, 0.521);
+    border-radius: 5px;
+    
+}
+.portadapeli {
+    text-align: center;
+}
+img {
+    width: 300px;
+    border-radius: 20px;
+    
+    height: 300px;
+}
