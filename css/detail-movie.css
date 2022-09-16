@@ -96,13 +96,19 @@ a{
     p a{
         padding-left: 10px;
     }
+
+    form{
+        display: flex; 
+     }
+
     input{
+        display: flex;
         padding-right: 10px; 
     }
     .boton{
-        display: flex;
         align-items: center;
-        padding-right: 10px; 
+        margin-right: 10px; 
+        margin-left: 10px;
     }
 
     section{
@@ -111,12 +117,12 @@ a{
         align-items: center;
         justify-content: center;
         display:flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
    
     article{
     
-        margin: 20px;
+        margin: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -127,6 +133,7 @@ a{
     
     }
 }
+<<<<<<< HEAD
 .DetailPeli {
     margin-left: 5%;
     margin-right: 5%;
@@ -168,3 +175,32 @@ img {
     
     height: 300px;
 }
+=======
+
+@media screen and (max-width: 940px){
+p a{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+form{
+    display: flex; 
+ }
+
+input{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.boton{
+    align-items: center;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+.logo{
+    padding-right: 10px;
+}
+
+}
+>>>>>>> f9c5d43e444d6a1e2fefd36b85c13dfd6aeaef30

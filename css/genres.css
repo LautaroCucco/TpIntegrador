@@ -110,38 +110,71 @@ footer{
 }
 
 
-    @media screen and (max-width: 1360px) {
-        p a{
-            padding-left: 10px;
-        }
-        input{
-            padding-right: 10px; 
-        }
-        .boton{
-            display: flex;
-            align-items: center;
-            padding-right: 10px; 
-        }
-    
-        section{
-            margin-left: 5%;
-            margin-right: 5%;
-            align-items: center;
-            justify-content: center;
-            display:flex;
-            flex-wrap: wrap;
-        }
-       
-        article{
-        
-            margin: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 25px;
-            background-color:  rgba(100, 100, 100, 0.521);
-            border-radius: 5px;
-        
-        }
+@media screen and (max-width: 1360px) {
+    p a{
+        padding-left: 10px;
     }
+
+    form{
+        display: flex; 
+     }
+
+    input{
+        display: flex;
+        padding-right: 10px; 
+    }
+    .boton{
+        align-items: center;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }
+
+    section{
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        justify-content: center;
+        display:flex;
+        flex-wrap: wrap;
+    }
+   
+    article{
+    
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        background-color:  rgba(100, 100, 100, 0.521);
+        border-radius: 5px;
+    
+    }
+}
+
+@media screen and (max-width: 940px){
+p a{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+form{
+    display: flex; 
+ }
+
+input{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.boton{
+    align-items: center;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+.logo{
+    padding-right: 10px;
+}
+
+}
