@@ -2,7 +2,7 @@
 
 let generosP = document.querySelector (".generosP")
 
-fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`)
+fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=aa2ebf30f90eae07fd3d7b8d253f5883&language=en-US`)
 .then(function(response){
     return (response.json());
 })
@@ -15,9 +15,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c7d8a8e4054747c2b47
     let lista = ``
     for (let i=0; i<info.length; i++)
 
-    lista += `<a href="">
-    <h1 href="detail-genres.html?id=${info[i].id}&genres=${info[i].name}"class="h1genres">${info[i].name}</h1>
-</a>`
+    lista += 
     console.log (lista)
     generosP.innerHTML = lista
 
