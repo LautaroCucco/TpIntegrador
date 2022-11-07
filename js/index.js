@@ -1,5 +1,5 @@
 // PELICULAS POPULARES 
-fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6')
+fetch('https://api.themoviedb.org/3/movie/popular?api_key=aa2ebf30f90eae07fd3d7b8d253f5883')
 .then(function(response) {
   return response.json()
 })
@@ -26,7 +26,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f
 })
 
 // LO MAS VISTO EN PELICULAS
-fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6')
+fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d7b8d253f5883')
 .then(function(response) {
   return response.json()
 })
@@ -38,7 +38,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d
 
   for (let i=0; i<5; i++){
       articulosPeliculasV+=//PELICULAS MAS VISTAS
-fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6')
+fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d7b8d253f5883')
 .then(function(response) {
   return response.json()
 })
