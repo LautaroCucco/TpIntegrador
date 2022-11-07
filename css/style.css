@@ -151,7 +151,7 @@ div{
     border: none;
 }
 
-
+/* FOOTER */
 footer{
     display: flex;
     background-color: rgba(100, 100, 100, 0.521); 
@@ -161,6 +161,16 @@ footer{
     
 }
 
+.lista{
+    list-style: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.fotito{
+    width: 2%;
+    height: 2%;
+    align-items: left;
+}
 /* DISEÑO RESPONSIVE */
 
     /* LAPTOP - TABLET */
