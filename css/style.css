@@ -153,6 +153,7 @@ div{
 
 
 footer{
+    display: flex;
     background-color: rgba(100, 100, 100, 0.521); 
     border-bottom: solid;  
     border-top: solid;

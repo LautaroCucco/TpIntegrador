@@ -12,8 +12,8 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=c7d8a8e4054747c2b47d0f
   for (let i=0; i<5; i++){
       articulosPeliculasP += `<section class="peliculasSeries">
                                 <article>
-                                    <a class="" href="">
-                                        <h3>${infoPP[i].title} (${infoPP[i].release_date})</h3>
+                                    <a class="" href="detail-movie.html">
+                                        <h3 href="detail-movie.html">${infoPP[i].title} (${infoPP[i].release_date})</h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt="">
                                 </article>
@@ -52,7 +52,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c7d8a8e4054747c2b47d
       articulosPeliculasV+= ` <section class="peliculasSeries peliculasV">
                                 <article>
                                     <a href="detail-movie.html">
-                                        <h3>${infoPV[i].title} (${infoPV[i].release_date}) </h3>
+                                        <h3 href="detail-movie.html">${infoPV[i].title} (${infoPV[i].release_date}) </h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoPV[i].poster_path}" alt="">
                                 </article> 
@@ -85,8 +85,8 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=c7d8a8e4054747c2b47d0f7eb
   for (let i=0; i<5; i++){
       articulosSeriesP+= `<section class="peliculasSeries peliculasV">
                                 <article>
-                                    <a href="detail-movie.html">
-                                        <h3>${infoSP[i].name} (${infoSP[i].first_air_date}) </h3>
+                                    <a href="detail-series.html">
+                                        <h3 href="detail-series.html">${infoSP[i].name} (${infoSP[i].first_air_date})</h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoSP[i].poster_path}" alt="">
                                 </article> 
@@ -108,9 +108,27 @@ formulario.addEventListener('submit', function(evento){
   console.log('No se envió')
 
   if(inputField.value == ""){
-    message.innerText = "No has ingresado ningún término";
+    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
   } else if (inputField.value.length < 3) {
-    message.innerText = "Debes ingresar al menos 3 caracteres"
+    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres")
+  } else {
+    this.submit();
+  }
+})
+
+// MOBILE SEARCH
+let formularioM = document.querySelector('.formBusquedaMobile');
+let inputFieldM = document.querySelector('.searchM');
+let messageM = document.querySelector('.messageM');
+
+formularioM.addEventListener('submit', function(evento){
+  evento.preventDefault();
+  console.log('No se envió')
+
+  if(inputFieldM.value == ""){
+    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
+  } else if (inputFieldM.value.length < 3) {
+    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
   } else {
     this.submit();
   }
