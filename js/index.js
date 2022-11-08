@@ -9,7 +9,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=aa2ebf30f90eae07fd3d7b
   let peliculasSeries = document.querySelector('.peliculasSeries');
   let articulosPeliculasP = ('');
 
-  for (let i=0; i<5; i++){
+  for (let i=0; i<4; i++){
       articulosPeliculasP += `<section class="peliculasSeries">
                                 <article>
                                     <a class="" href="detail-movie.html">
@@ -48,7 +48,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d
   let peliculasV = document.querySelector('.peliculasV');
   let articulosPeliculasV = ('');
 
-  for (let i=0; i<5; i++){
+  for (let i=0; i<4; i++){
       articulosPeliculasV+= ` <section class="peliculasSeries peliculasV">
                                 <article>
                                     <a href="detail-movie.html">
@@ -82,7 +82,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=c7d8a8e4054747c2b47d0f7eb
   let peliculasSeriesSP = document.querySelector('.seriesP');
   let articulosSeriesP = ('');
 
-  for (let i=0; i<5; i++){
+  for (let i=0; i<4; i++){
       articulosSeriesP+= `<section class="peliculasSeries peliculasV">
                                 <article>
                                     <a href="detail-series.html">
