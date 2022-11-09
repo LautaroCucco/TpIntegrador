@@ -183,6 +183,11 @@ footer{
 } */
 .ab{
     background-color: rgba(100, 100, 100, 0.521);
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin: 5%;
+    align-items: center;
 }
 /* DISEÑO RESPONSIVE */
 
