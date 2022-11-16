@@ -12,7 +12,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=aa2ebf30f90eae07fd3d7b
   for (let i=0; i<4; i++){
       articulosPeliculasP += `<section class="peliculasSeries">
                                 <article>
-                                    <a class="" href="detail-movie.html">
+                                    <a class="" href="detail-movie.html?id=${infoPP[i].id}">
                                         <h3 href="detail-movie.html">${infoPP[i].title} (${infoPP[i].release_date})</h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt="">
@@ -51,7 +51,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d
   for (let i=0; i<4; i++){
       articulosPeliculasV+= ` <section class="peliculasSeries peliculasV">
                                 <article>
-                                    <a href="detail-movie.html">
+                                    <a href="detail-movie.html?id=${infoPV[i].id}">
                                         <h3 href="detail-movie.html">${infoPV[i].title} (${infoPV[i].release_date}) </h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoPV[i].poster_path}" alt="">
@@ -85,7 +85,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=aa2ebf30f90eae07fd3d7b8d2
   for (let i=0; i<4; i++){
       articulosSeriesP+= `<section class="peliculasSeries peliculasV">
                                 <article>
-                                    <a href="detail-series.html">
+                                    <a href="detail-series.html?id=${infoSP[i].id}">
                                         <h3 href="detail-series.html">${infoSP[i].name} (${infoSP[i].first_air_date})</h3>
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoSP[i].poster_path}" alt="">

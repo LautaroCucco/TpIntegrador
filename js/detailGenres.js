@@ -27,7 +27,7 @@ fetch(url)
 
         articulo += `<section class="peliculasSeries generosP">
         <article>
-            <a href="./detailMovie.html?id=${results[index].id}"><h3>${results[index].title} (${results[index].release_date})</h3></a>
+            <a href="./detail-movie.html?id=${results[index].id}"><h3>${results[index].title} (${results[index].release_date})</h3></a>
             <img class="img" src="https://image.tmdb.org/t/p/original${results[index].poster_path}" alt="Movie">
         </article>
         </section>`
@@ -58,7 +58,7 @@ fetch(urlTV)
 
         articuloTV +=`<section class="peliculasSeries generosTV">
         <article>
-            <a href="./detailSeries.html?id=${resultsTV[index].id}"><h3>${resultsTV[index].name} (${resultsTV[index].first_air_date})</h3></a>
+            <a href="./detail-series.html?id=${resultsTV[index].id}"><h3>${resultsTV[index].name} (${resultsTV[index].first_air_date})</h3></a>
             <img class="img" src="https://image.tmdb.org/t/p/original${resultsTV[index].poster_path}" alt="Serie">
         </article>
         </section>`

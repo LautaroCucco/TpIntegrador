@@ -11,17 +11,33 @@ fetch(url)
     .then (function(data){
         console.log(data);
 
-        let imagen = document.querySelector('.fotoDetail');
-        let original_name = document.querySelector('.tituloDetail');
+        let imagen = document.querySelector('.img');
+        let original_name = document.querySelector('.TitleName');
         let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
-        let overview =  document.querySelector('.overview');
+        let overview =  document.querySelector('.sinopsis');
         let duracion = document.querySelector('.duracion')
         let genero = document.querySelector('.genero');
 
         let generos = '';
         for (let i=0; i<data.genres.length; i++){
-            generos += `<a href=detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}><span>${data.genres[i].name}, </span></a>`
+            generos += `<article class="DetailPeli">
+            <div class="tituloDetail">
+                <h2>PELICULA</h2>
+            </div>
+            <div class="ContenedorPeli">
+             <span class="portadapeli"><img class="img" src="https://image.tmdb.org/t/p/original${data.poster_path}" alt=""></span> 
+    
+                <ul class="detallepeli">
+                    <p class="TitleName" href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
+                    <p class="first_air_date">${data.release_date}</p>
+                    <p class="duracion">${data.overview}</p>
+                    <p class="genero"><a href="detail-genres.html">Genero:</a></p>
+                    <p class="sinopsis">${data.overview}</p>
+                    <p class="favbot"><button class="Bfav">Agregar a favoritos</button></p>
+              </ul>
+            </div>
+        </article>`
             console.log(generos);
         }
 
@@ -39,3 +55,12 @@ fetch(url)
     .catch(function(error){
         console.log(error);
     })
+
+    // detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}
+    // ${data.genres[i].name}
+    // `https://image.tmdb.org/t/p/original${data.poster_path}
+    // `Calificación: ${data.vote_average}
+    // ${data.release_date}
+    // ${data.overview}
+    // ${data.runtime}
+    // ${generos}
