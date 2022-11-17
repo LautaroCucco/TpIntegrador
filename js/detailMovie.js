@@ -64,3 +64,39 @@ fetch(url)
     // ${data.overview}
     // ${data.runtime}
     // ${generos}
+
+    // SEARCH
+    let formulario = document.querySelector('form');
+    let inputField = document.querySelector('.search');
+    let message = document.querySelector('.message');
+    
+    formulario.addEventListener('submit', function(evento){
+      evento.preventDefault();
+      console.log('No se envió')
+    
+      if(inputField.value == ""){
+        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
+      } else if (inputField.value.length < 3) {
+        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres")
+      } else {
+        this.submit();
+      }
+    })
+    
+    // MOBILE SEARCH
+    let formularioM = document.querySelector('.formBusquedaMobile');
+    let inputFieldM = document.querySelector('.searchM');
+    let messageM = document.querySelector('.messageM');
+    
+    formularioM.addEventListener('submit', function(evento){
+      evento.preventDefault();
+      console.log('No se envió')
+    
+      if(inputFieldM.value == ""){
+        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
+      } else if (inputFieldM.value.length < 3) {
+        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
+      } else {
+        this.submit();
+      }
+    })
