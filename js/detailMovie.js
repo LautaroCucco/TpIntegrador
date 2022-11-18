@@ -29,10 +29,10 @@ fetch(url)
              <span class="portadapeli"><img class="img" src="https://image.tmdb.org/t/p/original${data.poster_path}" alt=""></span> 
     
                 <ul class="detallepeli">
-                    <p class="TitleName" href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
+                    <p class="TitleName" <a href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
                     <p class="first_air_date">${data.release_date}</p>
                     <p class="duracion">${data.overview}</p>
-                    <p class="genero"><a href="detail-genres.html">Genero:</a></p>
+                    <p class="genero"><a href="detail-genres.html"></a>Genero: ${generos}</p>
                     <p class="sinopsis">${data.overview}</p>
                     <p class="favbot"><button class="Bfav">Agregar a favoritos</button></p>
               </ul>
@@ -43,7 +43,6 @@ fetch(url)
 
         imagen.src = `https://image.tmdb.org/t/p/original${data.poster_path}`;
         original_name.innerText = data.title;
-        rating.innerText = `Calificación: ${data.vote_average}`;
         first_air_date.innerText = `Estreno: ${data.release_date}`;
         overview.innerText = `${data.overview}`;
         duracion.innerText = `Duración: ${data.runtime} min`

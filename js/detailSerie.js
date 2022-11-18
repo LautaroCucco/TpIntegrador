@@ -15,7 +15,7 @@ fetch(url)
         let original_name = document.querySelector('.TitleName');
         let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
-        let overview =  document.querySelector('.overview');
+        let overview =  document.querySelector('.sinopsis');
         let genero = document.querySelector('.genero');
 
         let generos = '';
@@ -31,7 +31,7 @@ fetch(url)
                     <p class="TitleName" href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
                     <p class="first_air_date">${data.release_date}</p>
                     <p class="duracion">${data.overview}</p>
-                    <p class="genero"><a href="detail-genres.html">Genero:</a></p>
+                    <p class="genero"><a href="detail-genres.html"></a>Genero:</p>
                     <p class="sinopsis">${data.overview}</p>
                     <p class="favbot"><button class="Bfav">Agregar a favoritos</button></p>
               </ul>
@@ -39,10 +39,9 @@ fetch(url)
         </article>`
             console.log(generos);
         }
-
+        
         imagen.src = `https://image.tmdb.org/t/p/original${data.poster_path}`;
         original_name.innerText = data.original_name;
-        rating.innerText = `Calificación: ${data.vote_average}`;
         first_air_date.innerText = `Estreno: ${data.first_air_date}`;
         overview.innerText = `${data.overview}`;
         genero.innerHTML = `Genero: ${generos}`;
