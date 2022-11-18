@@ -37,7 +37,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d
   let articulosPeliculasV = ('');
 
   for (let i=0; i<5; i++){
-      articulosPeliculasV+=//PELICULAS MAS VISTAS
+      articulosPeliculasV+=
 fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=aa2ebf30f90eae07fd3d7b8d253f5883')
 .then(function(response) {
   return response.json()
@@ -115,3 +115,4 @@ formulario.addEventListener('submit', function(evento){
     this.submit();
   }
 })
+

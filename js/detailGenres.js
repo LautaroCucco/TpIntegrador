@@ -22,7 +22,7 @@ fetch(url)
     let pelicula = document.querySelector ('.generosP')
     let articulo = '';
     
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < results.length; index++) {
         console.log(results [index].poster_path);
 
         articulo += `<section class="peliculasSeries generosP">
@@ -53,8 +53,8 @@ fetch(urlTV)
     let series = document.querySelector ('.generosTV')
     let articuloTV = '';
     
-    for (let index = 0; index < 4; index++) {
-        console.log(resultsTV [index].poster_path);
+    for (let index = 0; index < resultsTV.length; index++) {
+        console.log(resultsTV[index].poster_path);
 
         articuloTV +=`<section class="peliculasSeries generosTV">
         <article>
