@@ -13,7 +13,6 @@ fetch(url)
 
         let imagen = document.querySelector('.img');
         let original_name = document.querySelector('.TitleName');
-        let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
         let overview =  document.querySelector('.sinopsis');
         let duracion = document.querySelector('.duracion')

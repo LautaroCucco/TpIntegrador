@@ -13,7 +13,6 @@ fetch(url)
 
         let imagen = document.querySelector('.img');
         let original_name = document.querySelector('.TitleName');
-        let rating =  document.querySelector('.rating');
         let first_air_date = document.querySelector('.first_air_date');
         let overview =  document.querySelector('.sinopsis');
         let genero = document.querySelector('.genero');
@@ -30,8 +29,7 @@ fetch(url)
                 <ul class="detallepeli">
                     <p class="TitleName" href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
                     <p class="first_air_date">${data.release_date}</p>
-                    <p class="duracion">${data.overview}</p>
-                    <p class="genero"><a href="detail-genres.html"></a>Genero:</p>
+                    <p class="genero"><a href="detail-genres.html"></a>Genero: ${generos}</p>
                     <p class="sinopsis">${data.overview}</p>
                     <p class="favbot"><button class="Bfav">Agregar a favoritos</button></p>
               </ul>
