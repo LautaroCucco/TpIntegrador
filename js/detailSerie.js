@@ -39,7 +39,7 @@ fetch(url)
         </article>`
             console.log(generos);
         }
-        
+
         imagen.src = `https://image.tmdb.org/t/p/original${data.poster_path}`;
         original_name.innerText = data.original_name;
         first_air_date.innerText = `Estreno: ${data.first_air_date}`;
@@ -71,20 +71,3 @@ formulario.addEventListener('submit', function(evento){
   }
 })
 
-// MOBILE SEARCH
-let formularioM = document.querySelector('.formBusquedaMobile');
-let inputFieldM = document.querySelector('.searchM');
-let messageM = document.querySelector('.messageM');
-
-formularioM.addEventListener('submit', function(evento){
-  evento.preventDefault();
-  console.log('No se envió')
-
-  if(inputFieldM.value == ""){
-    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
-  } else if (inputFieldM.value.length < 3) {
-    window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
-  } else {
-    this.submit();
-  }
-})

@@ -31,7 +31,7 @@ fetch(url)
                 <ul class="detallepeli">
                     <p class="TitleName" <a href="detailGenres.html?id=${data.genres[i].id}&genres=${data.genres[i].name}">${data.genres[i].name}</p>
                     <p class="first_air_date">${data.release_date}</p>
-                    <p class="duracion">${data.overview}</p>
+                    <p class="duracion">${data.runtime}}</p>
                     <p class="genero"><a href="detail-genres.html"></a>Genero: ${generos}</p>
                     <p class="sinopsis">${data.overview}</p>
                     <p class="favbot"><button class="Bfav">Agregar a favoritos</button></p>
@@ -45,8 +45,9 @@ fetch(url)
         original_name.innerText = data.title;
         first_air_date.innerText = `Estreno: ${data.release_date}`;
         overview.innerText = `${data.overview}`;
-        duracion.innerText = `Duración: ${data.runtime} min`
         genero.innerHTML = `Genero: ${generos}`;
+        duracion.innerText = `Duración: ${data.runtime} min`
+        // genero.innerHTML = `Genero: ${generos}`;
 
         
 
@@ -82,20 +83,3 @@ fetch(url)
       }
     })
     
-    // MOBILE SEARCH
-    let formularioM = document.querySelector('.formBusquedaMobile');
-    let inputFieldM = document.querySelector('.searchM');
-    let messageM = document.querySelector('.messageM');
-    
-    formularioM.addEventListener('submit', function(evento){
-      evento.preventDefault();
-      console.log('No se envió')
-    
-      if(inputFieldM.value == ""){
-        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
-      } else if (inputFieldM.value.length < 3) {
-        window.alert("Para realizar su busqueda, ingrese minimo 3 caracteres");
-      } else {
-        this.submit();
-      }
-    })
