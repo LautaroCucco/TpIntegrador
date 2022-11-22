@@ -2,7 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 
-let url = `https://api.themoviedb.org/3/tv/${id}?api_key=c7d8a8e4054747c2b47d0f7ebafc99e6&language=en-US`;
+let url = `https://api.themoviedb.org/3/tv/${id}?api_key=aa2ebf30f90eae07fd3d7b8d253f5883&language=en-US`;
 
 fetch(url)
     .then(function(response){
