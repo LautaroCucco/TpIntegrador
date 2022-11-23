@@ -7,17 +7,16 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=aa2ebf30f90eae07fd3d7b
   console.log(data);
   let infoPP = data.results;
   let peliculasSeries = document.querySelector('.peliculasSeries');
-  let articulosPeliculasP = ('');
+  let articulosPeliculasP = '';
 
   for (let i=0; i<4; i++){
-      articulosPeliculasP += `<section class="peliculasSeries">
-                                <article>
+      articulosPeliculasP += `<article>
                                     <a class="" href="detail-movie.html?id=${infoPP[i].id}">
-                                        <h3 href="detail-movie.html">${infoPP[i].title} (${infoPP[i].release_date})</h3>
+                                        <h3 href="detail-movie.html">${infoPP[i].title} (${infoPP[i].release_date})</h3> 
                                     </a>
                                     <img class="img" src="https://image.tmdb.org/t/p/original${infoPP[i].poster_path}" alt="">
-                                </article>
-                            </section>`
+                                </article>`
+                            
   }
   peliculasSeries.innerHTML = articulosPeliculasP;
 })
